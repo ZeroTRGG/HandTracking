@@ -56,7 +56,7 @@ while True:
         light = hypot(x3 - x1, y3 - y1)
         pc =  hypot(x4 - x1, y4 - y1)
 
-        if pc <= 150:
+        if pc <= 25:
             os.system("shutdown /s /t 1")
 
         vol = np.interp(length, [15, 220], [volMin, volMax])
